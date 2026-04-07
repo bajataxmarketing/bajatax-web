@@ -94,27 +94,25 @@ tailwind.config = {
 <body class="bg-surface text-on-surface font-body antialiased">
 
 <!-- Header -->
-<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md">
-  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-    <a class="flex items-center" href="index.html">
-      <img alt="Baja Tax Logo" class="h-10 w-auto object-contain" src="assets/logo1.png">
-    </a>
-
-    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md">
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="index.html">Inicio</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="persona-fisica.html">Persona Física</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="empresas.html">Empresas</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="servicios.html">Servicios</a>
-      <a class="text-primary border-b-2 border-primary pb-1 font-body font-medium text-sm tracking-tight" href="nosotros.html">Nosotros</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="recursos.html">Recursos</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body font-medium text-sm tracking-tight" href="contacto.html">Contacto</a>
-    </nav>
-
-    <a class="text-white px-6 py-2.5 rounded-xl hover:brightness-110 transition-all font-headline font-bold text-sm bg-[#006e27]" href="contacto.html">
-      Agenda tu asesoría
-    </a>
-  </div>
-</header>
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center h-10">
+<img alt="Baja Tax Logo" class="h-10 w-auto object-contain" src="assets/logo1.png">
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="index.html">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="persona-fisica.html">Persona Física</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="empresas.html">Empresas</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="servicios.html">Servicios</a>
+<a class="text-primary border-b-2 border-secondary pb-1 font-headline font-bold text-sm" href="nosotros.html">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="recursos.html">Recursos</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="contacto.html">Contacto</a>
+</div>
+<a href="contacto.html" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
+    Agenda tu asesoría
+</a>
+</div>
+</nav>
 
 <main class="pt-24">
 
@@ -276,11 +274,10 @@ tailwind.config = {
   </section>
 </main>
 
-<!-- WhatsApp Floating -->
-<a aria-label="WhatsApp" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform" href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0" target="_blank">
-  <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
-    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.82l.303.18c1.397.831 3.013 1.27 4.673 1.27 4.842 0 8.783-3.94 8.785-8.782.002-2.346-.913-4.553-2.575-6.216-1.663-1.663-3.868-2.58-6.214-2.58-4.841 0-8.781 3.941-8.784 8.783-.001 1.727.46 3.415 1.334 4.888l.198.334-1.062 3.878 3.972-1.042z"></path>
-  </svg>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/526647338483">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">¿Dudas? Habla con un experto</span>
 </a>
 
 <!-- Footer -->
