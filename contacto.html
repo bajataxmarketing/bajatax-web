@@ -215,8 +215,31 @@
 
               <div class="space-y-2">
                 <label class="font-label text-xs font-bold text-primary uppercase tracking-widest" for="service">Servicio requerido</label>
-                <input class="w-full form-input-bg border-none focus:ring-2 focus:ring-primary/20 px-4 py-3.5 rounded-xl transition-all font-body placeholder:text-outline/60"
-                       id="service" name="service" placeholder="Ej. Declaración anual, regularización, asesoría fiscal…" type="text">
+                <select class="w-full form-input-bg border-none focus:ring-2 focus:ring-primary/20 px-4 py-3.5 rounded-xl appearance-none transition-all font-body cursor-pointer"
+                        id="service" name="service">
+                  <option value="" disabled selected>Selecciona un servicio...</option>
+                  <option value="Declaraciones y Regularización">Declaraciones y Regularización</option>
+                  <option value="Asesoría Fiscal">Asesoría Fiscal</option>
+                  <option value="Contabilidad General">Contabilidad General</option>
+                  <option value="Nómina y Seguro Social">Nómina y Seguro Social</option>
+                  <option value="Facturación Electrónica 4.0">Facturación Electrónica 4.0</option>
+                  <option value="Constitución de empresas">Constitución de empresas</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label class="font-label text-xs font-bold text-primary uppercase tracking-widest" for="email">Correo electrónico</label>
+                  <input class="w-full form-input-bg border-none focus:ring-2 focus:ring-primary/20 px-4 py-3.5 rounded-xl transition-all font-body placeholder:text-outline/60"
+                         id="email" name="email" placeholder="ejemplo@correo.com" type="email" required>
+                </div>
+
+                <div class="space-y-2">
+                  <label class="font-label text-xs font-bold text-primary uppercase tracking-widest" for="phone">Teléfono / WhatsApp</label>
+                  <input class="w-full form-input-bg border-none focus:ring-2 focus:ring-primary/20 px-4 py-3.5 rounded-xl transition-all font-body placeholder:text-outline/60"
+                         id="phone" name="phone" placeholder="Ej. 664 123 4567" type="tel" required>
+                </div>
               </div>
 
               <div class="space-y-2">
@@ -375,7 +398,16 @@
       const clientTypeSelect = document.getElementById("client_type");
 
       if (servicio && serviceInput) {
-        serviceInput.value = decodeURIComponent(servicio);
+        // Find if option exists, otherwise select 'Otro'
+        let found = false;
+        for (let i = 0; i < serviceInput.options.length; i++) {
+          if (serviceInput.options[i].value === decodeURIComponent(servicio)) {
+            serviceInput.selectedIndex = i;
+            found = true;
+            break;
+          }
+        }
+        if (!found) serviceInput.value = "Otro";
       }
 
       if (tipo && clientTypeSelect) {
@@ -390,8 +422,10 @@
       e.preventDefault();
 
       const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
       const clientType = document.getElementById("client_type").value;
-      const service = document.getElementById("service").value.trim();
+      const service = document.getElementById("service").value;
       const message = document.getElementById("message").value.trim();
 
       const tipoClienteTexto =
@@ -400,6 +434,8 @@
       const subject = `Nuevo contacto web Baja Tax - ${service || "Consulta general"}`;
       const body =
 `Nombre completo: ${name}
+Correo: ${email}
+Teléfono: ${phone}
 Tipo de cliente: ${tipoClienteTexto}
 Servicio requerido: ${service}
 
