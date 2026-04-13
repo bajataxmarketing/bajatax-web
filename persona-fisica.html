@@ -30,14 +30,14 @@
 
 <!-- Standard Header -->
 <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-surface-dim/30">
-  <div class="flex justify-between items-center px-6 py-3 md:px-8 md:py-4 max-w-7xl mx-auto">
+  <div class="flex justify-between items-start px-6 py-3 md:px-8 md:py-4 max-w-7xl mx-auto">
     <!-- Logo -->
     <a href="/" class="flex-shrink-0">
       <img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png">
     </a>
     
     <!-- Link Desktop Container -->
-    <div class="hidden md:flex gap-8 items-center">
+    <div class="hidden md:flex gap-8 items-start">
       <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
       <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
       <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
@@ -49,7 +49,7 @@
     </div>
 
     <!-- Toggle Buttom (Mobile) -->
-    <button onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')" class="md:hidden flex items-center justify-center p-2 text-primary bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50">
+    <button onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')" class="md:hidden flex items-start justify-center p-2 text-primary bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50">
       <span class="material-symbols-outlined text-2xl">menu</span>
     </button>
   </div>
@@ -58,7 +58,7 @@
   <div id="mobile-dropdown" class="hidden md:hidden bg-white w-full border-t border-surface-dim/30 shadow-xl max-h-[80vh] overflow-y-auto">
     <div class="flex flex-col px-6 py-6 space-y-5 font-headline font-bold text-lg text-primary">
       <a href="/" class="hover:text-secondary">Inicio</a>
-      <a href="/persona-fisica" class="hover:text-secondary">Persona Física</a>
+      <a href="/persona-fisica" class="" class=""hover:text-secondary
       <a href="/empresas" class="hover:text-secondary">Empresas</a>
       <a href="/servicios" class="hover:text-secondary">Servicios</a>
       <a href="/nosotros" class="hover:text-secondary">Nosotros</a>
@@ -72,9 +72,9 @@
 
 <main>
 <!-- Hero Section -->
-<header class="relative pt-[120px] md:pt-[180px] pb-14 lg:pb-20 overflow-hidden bg-white">
+<header class="relative pt-[120px] md:pt-[150px] pb-14 lg:pb-20 overflow-hidden bg-white">
     <div class="max-w-[1280px] mx-auto px-8 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-10 md:gap-24 items-center">
+      <div class="grid lg:grid-cols-2 gap-10 md:gap-24 items-start">
         <div class="space-y-6 md:space-y-10">
           
           <p class="text-secondary font-bold tracking-[0.2em] uppercase text-xs">Servicios Especializados</p>
@@ -82,7 +82,7 @@
           <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-[500px]">
              Te ayudamos a cumplir correctamente con tus obligaciones fiscales, mantener tus finanzas en orden y tomar decisiones con claridad y seguridad.
           </p>
-          <div class="flex flex-col sm:flex-row gap-6 pt-2 items-center">
+          <div class="flex flex-col sm:flex-row gap-6 pt-2 items-start">
             <a href="/contacto" class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-6 py-3 md:px-10 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm">Agendar asesoría</a>
             <a href="#servicios" class="w-full sm:w-auto inline-flex justify-center bg-slate-200 text-primary px-6 py-3 md:px-10 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all">Ver servicios</a>
           </div>
@@ -104,40 +104,40 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Card 1 -->
 <div class="group bg-surface-container-lowest p-6 md:p-5 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
-<div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary-fixed text-primary">
+<div class="mb-6 inline-flex items-start justify-center w-14 h-14 rounded-full bg-primary-fixed text-primary">
 <span class="material-symbols-outlined" style="">person_search</span>
 </div>
 <h3 class="font-headline font-bold mb-4" style="">No sé cómo declarar mis impuestos</h3>
 <p class="text-on-surface-variant leading-relaxed mb-6" style="">Te orientamos para presentar tus declaraciones con claridad, orden y en apego a la normatividad vigente.</p>
-<a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="/servicios">
+<a class="text-primary font-bold flex items-start gap-2 group-hover:gap-4 transition-all" href="/servicios">
                             Ver servicios <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
 <!-- Card 2 -->
 <div class="group bg-surface-container-lowest p-6 md:p-5 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
-<div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container">
+<div class="mb-6 inline-flex items-start justify-center w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container">
 <span class="material-symbols-outlined" style="">warning_amber</span>
 </div>
 <h3 class="font-headline font-bold mb-4" style="">Tengo ingresos sin registrar</h3>
 <p class="text-on-surface-variant leading-relaxed mb-6" style="">Te ayudamos a ponerte al día con tus obligaciones fiscales para reducir riesgos, evitar recargos y recuperar tranquilidad.</p>
-<a class="text-secondary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="/servicios">
+<a class="text-secondary font-bold flex items-start gap-2 group-hover:gap-4 transition-all" href="/servicios">
                             Ver servicios <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
 <!-- Card 3 -->
 <div class="group bg-surface-container-lowest p-6 md:p-5 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
-<div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
+<div class="mb-6 inline-flex items-start justify-center w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
 <span class="material-symbols-outlined" style="">security</span>
 </div>
 <h3 class="font-headline font-bold mb-4" style="">Quiero evitar multas y recargos</h3>
 <p class="text-on-surface-variant leading-relaxed mb-6" style="">Revisamos tu situación fiscal para ayudarte a cumplir en tiempo y forma, con mayor claridad y menor riesgo.</p>
-<a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="/servicios">
+<a class="text-primary font-bold flex items-start gap-2 group-hover:gap-4 transition-all" href="/servicios">
                             Ver servicios <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Regime Block -->
-<div class="mt-16 bg-white/60 backdrop-blur-xl rounded-xl p-6 md:p-5 md:p-10 shadow-ambient flex flex-col md:flex-row items-center justify-between gap-6 md:p-8 relative overflow-hidden">
+<div class="mt-16 bg-white/60 backdrop-blur-xl rounded-xl p-6 md:p-5 md:p-10 shadow-ambient flex flex-col md:flex-row items-start justify-between gap-6 md:p-8 relative overflow-hidden">
 <div class="max-w-2xl relative z-10 text-center md:text-left">
 <h3 class="font-headline font-bold mb-2 text-on-surface" style="">¿Tienes dudas sobre tu régimen fiscal?</h3>
 <p class="text-on-surface-variant text-base opacity-90" style="">Analizamos tu situación para ayudarte a identificar el régimen fiscal más conveniente y cumplir correctamente con tus obligaciones.</p>
@@ -156,9 +156,9 @@
 <h2 class="font-headline font-extrabold text-on-surface mb-6" style="">Soluciones que cuidan tu patrimonio</h2>
 <p class="text-on-surface-variant mb-8" style="">Te acompañamos con servicios fiscales diseñados para mantener tus obligaciones en orden y darte tranquilidad en cada paso.</p>
 <div class="flex flex-col gap-4">
-<div class="flex items-center gap-4 text-primary font-bold" style="">
+<div class="flex items-start gap-4 text-primary font-bold" style="">
 <span class="w-8 h-[2px] bg-primary"></span>Claridad fiscal<div><br></div></div>
-<div class="flex items-center gap-4 text-on-surface-variant font-medium" style="">
+<div class="flex items-start gap-4 text-on-surface-variant font-medium" style="">
 <span class="w-8 h-[2px] bg-outline-variant"></span>Cumplimiento responsable
                             </div>
 </div>
@@ -167,17 +167,17 @@
 <!-- Service 1 -->
 <div class="bg-white p-6 md:p-8 md:p-6 md:p-6 md:p-12 rounded-xl">
 <div class="flex flex-col md:flex-row gap-8">
-<div class="w-16 h-16 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<div class="w-16 h-16 shrink-0 rounded-xl bg-primary/10 flex items-start justify-center text-primary">
 <span class="material-symbols-outlined text-4xl" style="">edit_document</span>
 </div>
 <div>
 <h3 class="font-headline font-bold mb-4 text-on-surface" style="">Declaraciones anuales y mensuales</h3>
 <p class="text-on-surface-variant mb-6" style="">Preparamos tus declaraciones con orden, precisión y apego a la normatividad vigente, considerando tus deducciones personales cuando apliquen.</p>
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-medium">
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span> Revisión de CFDI</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Revisión de deducciones personales</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Preparación de declaraciones provisionales</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Preparación de declaración anual</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span> Revisión de CFDI</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Revisión de deducciones personales</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Preparación de declaraciones provisionales</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Preparación de declaración anual</li>
 </ul>
 </div>
 </div>
@@ -185,17 +185,17 @@
 <!-- Service 2 -->
 <div class="bg-white p-6 md:p-8 md:p-6 md:p-6 md:p-12 rounded-xl">
 <div class="flex flex-col md:flex-row gap-8">
-<div class="w-16 h-16 shrink-0 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<div class="w-16 h-16 shrink-0 rounded-xl bg-secondary/10 flex items-start justify-center text-secondary">
 <span class="material-symbols-outlined text-4xl" style="">assignment_turned_in</span>
 </div>
 <div>
 <h3 class="font-headline font-bold mb-4 text-on-surface" style="">Regularización fiscal completa</h3>
 <p class="text-on-surface-variant mb-6" style="">Si tienes obligaciones pendientes o requerimientos de la autoridad, te ayudamos a regularizar tu situación fiscal con orden, claridad y acompañamiento profesional.</p>
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-medium">
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Revisión de obligaciones pendientes</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Declaraciones extemporáneas</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Atención a requerimientos fiscales</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Seguimiento de cumplimiento</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Revisión de obligaciones pendientes</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Declaraciones extemporáneas</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Atención a requerimientos fiscales</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Seguimiento de cumplimiento</li>
 </ul>
 </div>
 </div>
@@ -203,17 +203,17 @@
 <!-- Service 3 -->
 <div class="bg-white p-6 md:p-8 md:p-6 md:p-6 md:p-12 rounded-xl">
 <div class="flex flex-col md:flex-row gap-8">
-<div class="w-16 h-16 shrink-0 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+<div class="w-16 h-16 shrink-0 rounded-xl bg-primary-container/20 flex items-start justify-center text-primary">
 <span class="material-symbols-outlined text-4xl" style="">partner_exchange</span>
 </div>
 <div>
 <h3 class="font-headline font-bold mb-4 text-on-surface" style="">Asesoría fiscal personalizada</h3>
 <p class="text-on-surface-variant mb-6" style="">Brindamos asesoría personalizada para resolver dudas fiscales, orientarte en tus obligaciones y ayudarte a tomar decisiones con mayor claridad.</p>
 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-medium">
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Orientación sobre obligaciones fiscales</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Aclaración de dudas sobre ISR e IVA</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Revisión general de tu situación fiscal</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Atención personalizada</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Orientación sobre obligaciones fiscales</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Aclaración de dudas sobre ISR e IVA</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Revisión general de tu situación fiscal</li>
+<li class="flex items-start gap-2" style=""><span class="material-symbols-outlined text-secondary text-base" style="">check_circle</span>Atención personalizada</li>
 </ul>
 </div>
 </div>
@@ -297,7 +297,7 @@
 </div>
 </footer>
 <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/526647338483">
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-start justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/526647338483">
 <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">chat</span>
 <span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">¿Dudas? Habla con un experto</span>
 </a>
