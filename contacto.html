@@ -108,7 +108,7 @@
 <div class="flex items-center h-8 md:h-10">
 <a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
 </div>
-<div class="hidden md:flex gap-8 items-center">
+<div class="hidden md:flex gap-6 md:p-8 items-center">
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
@@ -128,7 +128,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-xl md:text-2xl font-headline font-bold">
 <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
 <span class="material-symbols-outlined text-primary">close</span>
 </button>
@@ -139,7 +139,7 @@
 <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
 <a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
 <a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
-<a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg">Agenda tu asesoría</a>
+<a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-base md:text-lg">Agenda tu asesoría</a>
 </div>
 </nav>
 
@@ -155,7 +155,7 @@
             <h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-[1.1] text-balance">
               Te ayudamos con tu situación fiscal
             </h1>
-            <p class="text-lg text-on-surface-variant max-w-md leading-relaxed font-body">
+            <p class="text-base md:text-lg text-on-surface-variant max-w-md leading-relaxed font-body">
               Nuestro equipo en Tijuana te ayuda a entender, ordenar y optimizar tu situación fiscal con claridad y seguridad.
             </p>
           </div>
@@ -203,7 +203,7 @@
             </div>
           </div>
 
-          <div class="relative mt-12 p-8 bg-surface-container-low rounded-xl border-l-4 border-secondary overflow-hidden">
+          <div class="relative mt-12 p-6 md:p-8 bg-surface-container-low rounded-xl border-l-4 border-secondary overflow-hidden">
             <p class="italic text-on-surface-variant relative z-10 font-body">
               La claridad fiscal no es opcional: es la base de decisiones financieras seguras.
             </p>
@@ -215,7 +215,7 @@
 
         <!-- Right Content: Contact Form -->
         <div class="lg:col-span-7">
-          <div id="contact-form" class="bg-surface-container-lowest p-8 md:p-12 rounded-2xl shadow-xl shadow-primary/5 border border-outline-variant/10">
+          <div id="contact-form" class="bg-surface-container-lowest p-6 md:p-8 md:p-8 md:p-12 rounded-2xl shadow-xl shadow-primary/5 border border-outline-variant/10">
             <form id="contactForm" class="space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="space-y-2">
@@ -272,7 +272,7 @@
               <button class="w-full bg-secondary text-on-secondary font-headline font-extrabold py-4 rounded-xl shadow-lg shadow-secondary/20 hover:opacity-95 transition-all flex items-center justify-center gap-3 group"
                       type="submit">
                 Enviar mensaje
-                <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">send</span>
+                <span class="material-symbols-outlined text-lg md:text-xl group-hover:translate-x-1 transition-transform">send</span>
               </button>
             </form>
 
@@ -305,8 +305,8 @@
             <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
           </div>
 
-          <div class="absolute top-8 left-8 bg-white/95 backdrop-blur-md p-8 rounded-2xl max-w-sm shadow-2xl border border-outline-variant/10">
-            <h4 class="font-headline font-extrabold text-primary mb-3 text-xl">Nuestra ubicación</h4>
+          <div class="absolute top-6 md:p-8 left-8 bg-white/95 backdrop-blur-md p-6 md:p-8 rounded-2xl max-w-sm shadow-2xl border border-outline-variant/10">
+            <h4 class="font-headline font-extrabold text-primary mb-3 text-lg md:text-xl">Nuestra ubicación</h4>
             <p class="text-on-surface-variant text-sm leading-relaxed mb-6 font-body">
               Nos ubicamos en Plaza Insurgentes, con fácil acceso para atender a clientes en Tijuana y la región.
             </p>
@@ -320,7 +320,7 @@
 
           <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div class="relative">
-              <div class="absolute -top-12 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm shadow-xl whitespace-nowrap">
+              <div class="absolute -top-8 md:p-12 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm shadow-xl whitespace-nowrap">
                 Baja Tax
                 <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary rotate-45"></div>
               </div>
@@ -340,7 +340,7 @@
 
   <!-- Footer -->
   <footer class="bg-[#002b55] text-white pt-16 pb-8 font-inter">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8 md:p-12 mb-16">
       <!-- Column 1 -->
       <div class="space-y-6">
         <img alt="Baja Tax" class="h-10 w-auto" src="assets/logo2.png">
@@ -378,7 +378,7 @@
         <h4 class="font-plus font-bold text-white mb-6 tracking-wider text-sm">CONTACTO</h4>
         <ul class="space-y-4 text-white/70 text-sm">
           <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-[#48ac57] text-xl shrink-0">location_on</span>
+            <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl shrink-0">location_on</span>
             <a class="hover:text-white transition-colors"
                href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7"
                target="_blank">
@@ -386,11 +386,11 @@
             </a>
           </li>
           <li class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-[#48ac57] text-xl shrink-0">mail</span>
+            <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl shrink-0">mail</span>
             <a class="hover:text-white transition-colors" href="mailto:info@bajatax.com">info@bajatax.com</a>
           </li>
           <li class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-[#48ac57] text-xl shrink-0">call</span>
+            <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl shrink-0">call</span>
             <a class="hover:text-white transition-colors"
                href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0"
                target="_blank">
@@ -467,5 +467,20 @@ ${message}`;
         `mailto:info@bajatax.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   </script>
-</body>
+
+<!-- Mobile Menu Script -->
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const isHidden = menu.classList.contains('translate-x-full');
+    if (isHidden) {
+        menu.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    } else {
+        menu.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+    }
+}
+</script>
+\n</body>
 </html>

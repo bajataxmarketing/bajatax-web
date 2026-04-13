@@ -105,7 +105,7 @@
 <div class="flex items-center h-8 md:h-10">
 <a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
 </div>
-<div class="hidden md:flex gap-8 items-center">
+<div class="hidden md:flex gap-6 md:p-8 items-center">
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
 <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
@@ -125,7 +125,7 @@
 </div>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-xl md:text-2xl font-headline font-bold">
 <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
 <span class="material-symbols-outlined text-primary">close</span>
 </button>
@@ -136,29 +136,29 @@
 <a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
 <a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
 <a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
-<a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg">Agenda tu asesoría</a>
+<a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-base md:text-lg">Agenda tu asesoría</a>
 </div>
 </nav>
 
 
   <!-- Hero Section -->
   <header class="relative pt-32 pb-24 overflow-hidden hero-gradient">
-    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-8 md:p-12 items-center">
       <div class="md:col-span-7">
         <span class="text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4 block">Estrategia corporativa</span>
         <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8">
           <span class="text-slate-800">Soluciones contables para</span>
           <span class="text-editorial-gradient"> empresas</span>
         </h1>
-        <p class="text-lg md:text-xl max-w-[520px] mb-10 leading-relaxed text-slate-500">
+        <p class="text-base md:text-lg md:text-xl max-w-[520px] mb-10 leading-relaxed text-slate-500">
           Te ayudamos a mantener tu empresa en orden, cumplir correctamente con tus obligaciones fiscales y tomar decisiones con mayor claridad y seguridad.
         </p>
 
         <div class="flex flex-wrap gap-4">
-          <a href="contacto.html?tipo=empresa" class="bg-[#48ac57] text-white px-8 py-4 rounded-md font-bold text-lg hover:shadow-xl transition-all">
+          <a href="contacto.html?tipo=empresa" class="bg-[#48ac57] text-white px-8 py-4 rounded-md font-bold text-base md:text-lg hover:shadow-xl transition-all">
             Optimiza tu empresa hoy
           </a>
-          <a href="/servicios" class="bg-surface-container-high text-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-surface-container-highest transition-all">
+          <a href="/servicios" class="bg-surface-container-high text-primary px-8 py-4 rounded-md font-bold text-base md:text-lg hover:bg-surface-container-highest transition-all">
             Ver servicios
           </a>
         </div>
@@ -178,13 +178,13 @@
 
   <!-- Trust Bar -->
   <section class="relative z-10 -mt-8 px-8">
-    <div class="max-w-7xl mx-auto bg-white/60 backdrop-blur-xl rounded-xl p-8 shadow-ambient">
+    <div class="max-w-7xl mx-auto bg-white/60 backdrop-blur-xl rounded-xl p-6 md:p-8 shadow-ambient">
       <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
         <div class="flex items-center gap-4">
           <span class="material-symbols-outlined text-secondary text-3xl">verified</span>
-          <span class="font-headline font-bold text-xl text-on-surface">Empresas en Baja California confían en nosotros</span>
+          <span class="font-headline font-bold text-lg md:text-xl text-on-surface">Empresas en Baja California confían en nosotros</span>
         </div>
-        <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-60">
+        <div class="flex flex-wrap justify-center gap-6 md:p-8 md:gap-16 items-center opacity-60">
           <span class="text-sm font-bold tracking-widest uppercase">Seguridad</span>
           <span class="text-sm font-bold tracking-widest uppercase">Claridad</span>
           <span class="text-sm font-bold tracking-widest uppercase">Confianza</span>
@@ -203,11 +203,11 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
+        <div class="group bg-surface-container-lowest p-6 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
           <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary-fixed text-primary">
             <span class="material-symbols-outlined">rocket_launch</span>
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4">Estoy iniciando mi empresa</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-4">Estoy iniciando mi empresa</h3>
           <p class="text-on-surface-variant leading-relaxed mb-6">
             Te acompañamos en la constitución de tu empresa, alta ante el SAT y organización inicial para comenzar correctamente.
           </p>
@@ -217,11 +217,11 @@
           </a>
         </div>
 
-        <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
+        <div class="group bg-surface-container-lowest p-6 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
           <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container">
             <span class="material-symbols-outlined">query_stats</span>
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4">Ya estoy operando</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-4">Ya estoy operando</h3>
           <p class="text-on-surface-variant leading-relaxed mb-6">
             Gestionamos tu cumplimiento mensual, control de nómina y revisión continua para mantener tu empresa en orden.
           </p>
@@ -231,11 +231,11 @@
           </a>
         </div>
 
-        <div class="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
+        <div class="group bg-surface-container-lowest p-6 md:p-10 rounded-xl transition-all hover:bg-white hover:shadow-ambient hover:-translate-y-1">
           <div class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
             <span class="material-symbols-outlined">monetization_on</span>
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4">Quiero optimizar impuestos</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-4">Quiero optimizar impuestos</h3>
           <p class="text-on-surface-variant leading-relaxed mb-6">
             Te orientamos en la toma de decisiones fiscales para optimizar tu operación dentro del marco legal vigente.
           </p>
@@ -270,13 +270,13 @@
         </div>
 
         <div class="lg:col-span-8 flex flex-col gap-8">
-          <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm">
+          <div class="bg-white p-6 md:p-8 md:p-8 md:p-12 rounded-xl shadow-sm">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="w-16 h-16 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
                 <span class="material-symbols-outlined text-4xl">account_balance</span>
               </div>
               <div>
-                <h3 class="font-headline text-2xl font-bold mb-4 text-on-surface">Contabilidad electrónica</h3>
+                <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 text-on-surface">Contabilidad electrónica</h3>
                 <p class="text-on-surface-variant mb-6">
                   Llevamos tu contabilidad al día conforme a la normatividad aplicable, integrando tu información financiera de forma ordenada y clara.
                 </p>
@@ -290,13 +290,13 @@
             </div>
           </div>
 
-          <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm">
+          <div class="bg-white p-6 md:p-8 md:p-8 md:p-12 rounded-xl shadow-sm">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="w-16 h-16 shrink-0 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
                 <span class="material-symbols-outlined text-4xl">groups</span>
               </div>
               <div>
-                <h3 class="font-headline text-2xl font-bold mb-4 text-on-surface">Nómina y seguridad social</h3>
+                <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 text-on-surface">Nómina y seguridad social</h3>
                 <p class="text-on-surface-variant mb-6">
                   Vigilamos el cumplimiento de tus obligaciones laborales y de seguridad social para proteger a tu empresa y a tu equipo.
                 </p>
@@ -310,13 +310,13 @@
             </div>
           </div>
 
-          <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm">
+          <div class="bg-white p-6 md:p-8 md:p-8 md:p-12 rounded-xl shadow-sm">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="w-16 h-16 shrink-0 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
                 <span class="material-symbols-outlined text-4xl">insights</span>
               </div>
               <div>
-                <h3 class="font-headline text-2xl font-bold mb-4 text-on-surface">Asesoría fiscal empresarial</h3>
+                <h3 class="font-headline text-xl md:text-2xl font-bold mb-4 text-on-surface">Asesoría fiscal empresarial</h3>
                 <p class="text-on-surface-variant mb-6">
                   Brindamos asesoría especializada para ayudarte a tomar decisiones informadas, reducir riesgos y cumplir correctamente con tus responsabilidades fiscales.
                 </p>
@@ -342,10 +342,10 @@
     </div>
     <div class="max-w-4xl mx-auto px-8 text-center relative z-10">
       <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-white mb-8">Recibe acompañamiento contable y fiscal para tu empresa</h2>
-      <p class="text-primary-fixed text-lg md:text-xl mb-12 opacity-90">
+      <p class="text-primary-fixed text-base md:text-lg md:text-xl mb-12 opacity-90">
         Agenda una asesoría y recibe orientación profesional para mantener tu empresa en orden y en cumplimiento.
       </p>
-      <a href="contacto.html?tipo=empresa" class="bg-[#48ac57] text-white px-12 py-5 rounded-md font-extrabold text-xl hover:scale-105 transition-transform shadow-2xl inline-flex">
+      <a href="contacto.html?tipo=empresa" class="bg-[#48ac57] text-white px-12 py-5 rounded-md font-extrabold text-lg md:text-xl hover:scale-105 transition-transform shadow-2xl inline-flex">
         Agenda tu asesoría
       </a>
     </div>
@@ -394,17 +394,17 @@
           <h4 class="text-[#48ac57] font-bold text-xs tracking-widest uppercase mb-8">Contacto</h4>
           <ul class="flex flex-col gap-6 text-white/70 text-sm">
             <li class="flex gap-4 items-start">
-              <span class="material-symbols-outlined text-[#48ac57] text-xl">location_on</span>
+              <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl">location_on</span>
               <a class="leading-relaxed hover:text-white transition-colors" href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7" target="_blank">
                 Plaza Insurgentes, Blvd. Insurgentes 18098, Río Tijuana 3.ª Etapa, 22226 Tijuana, B.C. Int. 8A4 y 8A5.
               </a>
             </li>
             <li class="flex gap-4 items-center">
-              <span class="material-symbols-outlined text-[#48ac57] text-xl">mail</span>
+              <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl">mail</span>
               <a class="hover:text-white transition-colors" href="mailto:info@bajatax.com">info@bajatax.com</a>
             </li>
             <li class="flex gap-4 items-center">
-              <span class="material-symbols-outlined text-[#48ac57] text-xl">call</span>
+              <span class="material-symbols-outlined text-[#48ac57] text-lg md:text-xl">call</span>
               <a class="hover:text-white transition-colors" href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0" target="_blank">
                 +52 664 733 8483
               </a>
@@ -425,5 +425,20 @@
 <span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">¿Dudas? Habla con un experto</span>
 </a>
 
-</body>
+
+<!-- Mobile Menu Script -->
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const isHidden = menu.classList.contains('translate-x-full');
+    if (isHidden) {
+        menu.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    } else {
+        menu.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+    }
+}
+</script>
+\n</body>
 </html>
