@@ -103,25 +103,46 @@
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 
   <!-- Top Navigation Bar -->
-  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="flex items-center h-10">
-<img alt="Baja Tax Logo" class="h-10 w-auto object-contain" src="assets/logo1.png">
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 md:px-8 py-3 md:py-4 max-w-7xl mx-auto">
+<div class="flex items-center h-8 md:h-10">
+<a href="/"><img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png"></a>
 </div>
 <div class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="index.html">Inicio</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="persona-fisica.html">Persona Física</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="empresas.html">Empresas</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="servicios.html">Servicios</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="nosotros.html">Nosotros</a>
-<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="recursos.html">Recursos</a>
-<a class="text-primary border-b-2 border-secondary pb-1 font-headline font-bold text-sm" href="contacto.html">Contacto</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/nosotros">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/recursos">Recursos</a>
+<a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/contacto">Contacto</a>
 </div>
-<a href="contacto.html" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
+<a href="/contacto" class="hidden md:block text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 hover:scale-100 transition-transform" style="background-color: #006e27;">
     Agenda tu asesoría
 </a>
+<button onclick="toggleMobileMenu()" class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] bg-surface-container-low rounded-lg">
+<span class="w-6 h-0.5 bg-primary rounded"></span>
+<span class="w-6 h-0.5 bg-primary rounded"></span>
+<span class="w-6 h-0.5 bg-primary rounded"></span>
+</button>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[55] transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-6 text-2xl font-headline font-bold">
+<button onclick="toggleMobileMenu()" class="absolute top-6 right-6 p-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-primary">close</span>
+</button>
+<a href="/" class="text-primary hover:text-secondary">Inicio</a>
+<a href="/persona-fisica" class="text-primary hover:text-secondary">Persona Física</a>
+<a href="/empresas" class="text-primary hover:text-secondary">Empresas</a>
+<a href="/servicios" class="text-primary hover:text-secondary">Servicios</a>
+<a href="/nosotros" class="text-primary hover:text-secondary">Nosotros</a>
+<a href="/recursos" class="text-primary hover:text-secondary">Recursos</a>
+<a href="/contacto" class="text-primary hover:text-secondary">Contacto</a>
+<a href="/contacto" class="mt-4 bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg">Agenda tu asesoría</a>
 </div>
 </nav>
+
 
   <main class="pt-32 pb-20">
     <section class="max-w-7xl mx-auto px-8">
@@ -336,10 +357,10 @@
       <div>
         <h4 class="font-plus font-bold text-white mb-6 tracking-wider text-sm">NAVEGACIÓN</h4>
         <ul class="space-y-4 text-white/70 text-sm">
-          <li><a class="hover:text-white transition-colors" href="index.html">Inicio</a></li>
-          <li><a class="hover:text-white transition-colors" href="nosotros.html">Nosotros</a></li>
-          <li><a class="hover:text-white transition-colors" href="servicios.html">Servicios</a></li>
-          <li><a class="hover:text-white transition-colors" href="contacto.html">Contacto</a></li>
+          <li><a class="hover:text-white transition-colors" href="/">Inicio</a></li>
+          <li><a class="hover:text-white transition-colors" href="/nosotros">Nosotros</a></li>
+          <li><a class="hover:text-white transition-colors" href="/servicios">Servicios</a></li>
+          <li><a class="hover:text-white transition-colors" href="/contacto">Contacto</a></li>
         </ul>
       </div>
 
@@ -347,8 +368,8 @@
       <div>
         <h4 class="font-plus font-bold text-white mb-6 tracking-wider text-sm">LEGAL</h4>
         <ul class="space-y-4 text-white/70 text-sm">
-          <li><a class="hover:text-white transition-colors" href="privacidad.html">Privacidad</a></li>
-          <li><a class="hover:text-white transition-colors" href="terminos.html">Términos</a></li>
+          <li><a class="hover:text-white transition-colors" href="/privacidad">Privacidad</a></li>
+          <li><a class="hover:text-white transition-colors" href="/terminos">Términos</a></li>
         </ul>
       </div>
 
