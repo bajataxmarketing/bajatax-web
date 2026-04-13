@@ -101,14 +101,14 @@
 
 <!-- Standard Header -->
 <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-surface-dim/30">
-  <div class="flex justify-between items-start px-6 py-3 md:px-8 md:py-4 max-w-7xl mx-auto">
+  <div class="flex justify-between items-center px-6 py-3 md:px-8 md:py-4 max-w-7xl mx-auto">
     <!-- Logo -->
     <a href="/" class="flex-shrink-0">
       <img alt="Baja Tax Logo" class="h-8 md:h-10 w-auto object-contain" src="assets/logo1.png">
     </a>
     
     <!-- Link Desktop Container -->
-    <div class="hidden md:flex gap-8 items-start">
+    <div class="hidden md:flex gap-8 items-center">
       <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/">Inicio</a>
       <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/persona-fisica">Persona Física</a>
       <a class="text-on-surface-variant hover:text-primary font-headline font-semibold text-sm transition-colors duration-200" href="/empresas">Empresas</a>
@@ -120,7 +120,7 @@
     </div>
 
     <!-- Toggle Buttom (Mobile) -->
-    <button onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')" class="md:hidden flex items-start justify-center p-2 text-primary bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50">
+    <button onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')" class="md:hidden flex items-center justify-center p-2 text-primary bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50">
       <span class="material-symbols-outlined text-2xl">menu</span>
     </button>
   </div>
@@ -208,7 +208,7 @@
         <div class="lg:col-span-4">
           <h5 class="text-brand-green font-bold text-[10px] tracking-[0.2em] uppercase mb-8">Contacto</h5>
           <ul class="space-y-6">
-            <li class="flex gap-4 items-start">
+            <li class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-brand-green text-lg md:text-xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">location_on</span>
               <a class="text-white/70 text-[14px] leading-relaxed hover:text-white transition-colors"
                  href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7"
@@ -217,12 +217,12 @@
               </a>
             </li>
 
-            <li class="flex gap-4 items-start">
+            <li class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-brand-green text-lg md:text-xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">mail</span>
               <a class="text-white/70 text-[14px] hover:text-white" href="mailto:info@bajatax.com">info@bajatax.com</a>
             </li>
 
-            <li class="flex gap-4 items-start">
+            <li class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-brand-green text-lg md:text-xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">call</span>
               <a class="text-white/70 text-[14px] hover:text-white"
                  href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0"
@@ -234,7 +234,7 @@
         </div>
       </div>
 
-      <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center items-start relative">
+      <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center items-center relative">
         <p class="text-white/30 text-[13px] font-medium">
           © 2024 Baja Tax. Todos los derechos reservados.
         </p>
@@ -269,12 +269,12 @@
             Somos una firma local en Tijuana que te ayuda a mantener tus obligaciones fiscales y contables en orden, con claridad, confianza y acompañamiento profesional.
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-6 pt-2 items-start">
+          <div class="flex flex-col sm:flex-row gap-6 pt-2 items-center">
             <a href="/contacto" class="w-full sm:w-auto inline-flex justify-center bg-secondary text-white px-10 py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-105 transition-all shadow-sm">
               Agendar asesoría
             </a>
 
-            <a class="text-primary font-bold text-base hover:text-secondary transition-colors flex items-start gap-2 group"
+            <a class="text-primary font-bold text-base hover:text-secondary transition-colors flex items-center gap-2 group"
                href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0"
                target="_blank">
               Hablar con un asesor
@@ -301,7 +301,7 @@
 
       <div class="grid md:grid-cols-2 gap-10">
         <!-- Persona Física -->
-        <div class="bg-white p-6 md:p-6 md:p-12 rounded-[2rem] flex flex-col items-start transition-all hover:translate-y-[-4px] border-none">
+        <div class="bg-white p-6 md:p-6 md:p-12 rounded-[2rem] flex flex-col items-center transition-all hover:translate-y-[-4px] border-none">
           <div class="mb-8 text-secondary bg-secondary/10 p-4 rounded-2xl">
             <span class="material-symbols-outlined text-3xl">person</span>
           </div>
@@ -309,14 +309,14 @@
           <p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-10">
             Declaraciones, regularización y cumplimiento fiscal con un proceso claro y fácil de entender.
           </p>
-          <a href="/persona-fisica" class="mt-auto text-secondary font-bold text-base md:text-lg flex items-start gap-2 group">
+          <a href="/persona-fisica" class="mt-auto text-secondary font-bold text-base md:text-lg flex items-center gap-2 group">
             Ver opciones
             <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
         </div>
 
         <!-- Empresas -->
-        <div class="bg-slate-200/50 p-6 md:p-6 md:p-12 rounded-[2rem] flex flex-col items-start transition-all hover:translate-y-[-4px] border-none">
+        <div class="bg-slate-200/50 p-6 md:p-6 md:p-12 rounded-[2rem] flex flex-col items-center transition-all hover:translate-y-[-4px] border-none">
           <div class="mb-8 text-primary bg-primary/10 p-4 rounded-2xl">
             <span class="material-symbols-outlined text-3xl">corporate_fare</span>
           </div>
@@ -324,7 +324,7 @@
           <p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-10">
             Estructura fiscal, nómina, contabilidad y cumplimiento para operar con orden y seguridad.
           </p>
-          <a href="/empresas" class="mt-auto text-primary font-bold text-base md:text-lg flex items-start gap-2 group">
+          <a href="/empresas" class="mt-auto text-primary font-bold text-base md:text-lg flex items-center gap-2 group">
             Ver soluciones
             <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
@@ -349,7 +349,7 @@
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
             Evita multas y pon tus obligaciones fiscales al día con respaldo profesional.
           </p>
-          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-start gap-2 hover:translate-x-1"
+          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-center gap-2 hover:translate-x-1"
             href="/servicios">
             Ver más <span class="material-symbols-outlined text-sm">arrow_outward</span>
           </a>
@@ -362,7 +362,7 @@
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
             Gestión de nómina y seguridad social con cumplimiento laboral y fiscal.
           </p>
-          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-start gap-2 hover:translate-x-1"
+          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-center gap-2 hover:translate-x-1"
              href="/servicios">
             Ver más <span class="material-symbols-outlined text-sm">arrow_outward</span>
           </a>
@@ -375,7 +375,7 @@
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
             Te ayudamos a formalizar tu negocio analizando factores fiscales, legales y operativos.
           </p>
-          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-start gap-2 hover:translate-x-1"
+          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-center gap-2 hover:translate-x-1"
              href="/servicios">
             Ver más <span class="material-symbols-outlined text-sm">arrow_outward</span>
           </a>
@@ -388,7 +388,7 @@
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
             Acompañamiento personalizado para tomar decisiones financieras con mayor seguridad.
           </p>
-          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-start gap-2 hover:translate-x-1"
+          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-center gap-2 hover:translate-x-1"
              href="/servicios">
             Ver más <span class="material-symbols-outlined text-sm">arrow_outward</span>
           </a>
@@ -401,7 +401,7 @@
           <p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-base md:text-lg mb-10 flex-grow">
             Emite CFDI y complementos de pago conforme a la normatividad fiscal vigente.
           </p>
-          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-start gap-2 hover:translate-x-1"
+          <a class="text-secondary group-hover:text-white transition-colors font-bold text-base md:text-lg flex items-center gap-2 hover:translate-x-1"
              href="/servicios">
             Ver más <span class="material-symbols-outlined text-sm">arrow_outward</span>
           </a>
@@ -413,7 +413,7 @@
   <!-- Trust Section -->
   <section class="py-12 md:py-24 bg-light-bg">
     <div class="max-w-[1200px] mx-auto px-8">
-      <div class="grid lg:grid-cols-2 gap-8 md:gap-20 items-start">
+      <div class="grid lg:grid-cols-2 gap-8 md:gap-20 items-center">
         <div class="space-y-10 order-2 lg:order-1">
           <h2 class="font-headline text-primary leading-tight">
             Más de 18 años ayudando a personas y empresas a cumplir correctamente con sus obligaciones fiscales.
@@ -424,7 +424,7 @@
           </p>
 
           <div class="space-y-6">
-            <div class="flex gap-6 items-start p-4 rounded-2xl hover:bg-white transition-colors">
+            <div class="flex gap-6 items-center p-4 rounded-2xl hover:bg-white transition-colors">
               <div class="bg-secondary/10 p-3 rounded-xl text-secondary flex-shrink-0">
                 <span class="material-symbols-outlined text-xl md:text-2xl">visibility</span>
               </div>
@@ -434,7 +434,7 @@
               </div>
             </div>
 
-            <div class="flex gap-6 items-start p-4 rounded-2xl hover:bg-white transition-colors">
+            <div class="flex gap-6 items-center p-4 rounded-2xl hover:bg-white transition-colors">
               <div class="bg-secondary/10 p-3 rounded-xl text-secondary flex-shrink-0">
                 <span class="material-symbols-outlined text-xl md:text-2xl">verified_user</span>
               </div>
@@ -444,7 +444,7 @@
               </div>
             </div>
 
-            <div class="flex gap-6 items-start p-4 rounded-2xl hover:bg-white transition-colors">
+            <div class="flex gap-6 items-center p-4 rounded-2xl hover:bg-white transition-colors">
               <div class="bg-secondary/10 p-3 rounded-xl text-secondary flex-shrink-0">
                 <span class="material-symbols-outlined text-xl md:text-2xl">lock</span>
               </div>
@@ -474,7 +474,7 @@
     <div class="max-w-[1200px] mx-auto px-8">
       <div class="bg-dark-blue rounded-[3rem] overflow-hidden relative">
         <div class="absolute inset-0 bg-grid-subtle opacity-5"></div>
-        <div class="relative z-10 p-16 md:p-24 flex flex-col items-start text-center max-w-3xl mx-auto space-y-8">
+        <div class="relative z-10 p-16 md:p-24 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
           <img alt="Baja Tax" class="h-10 w-auto opacity-90" src="assets/logo2.png">
           <h2 class="font-headline text-white leading-tight">
             Toma el control de tu futuro fiscal
@@ -523,7 +523,7 @@
         <div class="lg:col-span-4">
           <h5 class="text-brand-green font-bold text-[10px] tracking-[0.2em] uppercase mb-8">Contacto</h5>
           <ul class="space-y-6">
-            <li class="flex gap-4 items-start">
+            <li class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-brand-green text-lg md:text-xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">location_on</span>
               <a class="text-white/70 text-[14px] leading-relaxed hover:text-white transition-colors"
                  href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7"
@@ -532,12 +532,12 @@
               </a>
             </li>
 
-            <li class="flex gap-4 items-start">
+            <li class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-brand-green text-lg md:text-xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">mail</span>
               <a class="text-white/70 text-[14px] hover:text-white" href="mailto:info@bajatax.com">info@bajatax.com</a>
             </li>
 
-            <li class="flex gap-4 items-start">
+            <li class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-brand-green text-lg md:text-xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">call</span>
               <a class="text-white/70 text-[14px] hover:text-white"
                  href="https://api.whatsapp.com/send/?phone=5216647338483&text&type=phone_number&app_absent=0"
@@ -549,7 +549,7 @@
         </div>
       </div>
 
-      <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center items-start relative">
+      <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center items-center relative">
         <p class="text-white/30 text-[13px] font-medium">
           © 2024 Baja Tax. Todos los derechos reservados.
         </p>
@@ -559,7 +559,7 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-start justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/526647338483">
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/526647338483">
 <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">chat</span>
 <span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">¿Dudas? Habla con un experto</span>
 </a>
