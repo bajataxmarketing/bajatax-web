@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -76,12 +77,49 @@
                         DEFAULT: "0.125rem",
                         lg: "0.25rem",
                         xl: "0.5rem",
-                        full: "0.75rem"
-                    }
-                }
-            }
+                        "on-primary": "#ffffff",
+                    },
+                },
+            },
         };
     </script>
+    <style>
+        .guias-carousel {
+            padding: 50px 0 !important;
+            overflow: visible !important;
+        }
+        .guias-carousel .swiper-slide {
+            width: 320px !important;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        @media (min-width: 768px) {
+            .guias-carousel .swiper-slide {
+                width: 400px !important;
+            }
+        }
+        .guias-carousel .swiper-slide-shadow-left,
+        .guias-carousel .swiper-slide-shadow-right {
+            border-radius: 1.5rem;
+        }
+        .guias-carousel .swiper-pagination-bullet-active {
+            background: #006e27 !important;
+        }
+        .guias-carousel .swiper-button-next,
+        .guias-carousel .swiper-button-prev {
+            color: #006e27 !important;
+            background: rgba(255, 255, 255, 0.9);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .guias-carousel .swiper-button-next:after,
+        .guias-carousel .swiper-button-prev:after {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
 <style>
 
     /* Uniformidad Tipográfica Global */
@@ -218,73 +256,94 @@ Leer en línea
             </p>
 </div>
 
-      <div class="col-span-12 md:col-start-6 md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
-
-        <!-- Guía RESICO 2026 -->
-        <div class="group">
-          <div class="aspect-[4/3] bg-primary rounded-2xl mb-6 overflow-hidden shadow-lg border border-outline-variant/10 relative">
-            <img src="assets/recursos/guia-resico-2026-real.png" alt="Guía RESICO 2026" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <div class="absolute top-4 left-4">
-              <span class="bg-secondary text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg">Nuevo</span>
-            </div>
-          </div>
-          <h4 class="text-xl md:text-2xl font-bold text-primary mb-2">RESICO 2026: Éxito Fiscal</h4>
-          <p class="text-sm md:text-base text-on-surface-variant mb-6 leading-relaxed">Protege tu lugar en el régimen más amigable del SAT con nuestra guía actualizada. Todo lo que necesitas saber hoy.</p>
-          
-          <div class="flex flex-col gap-3">
-            <div class="flex flex-wrap gap-4 items-center">
-              <a href="assets/recursos/guia-resico-2026.pdf" target="_blank" class="bg-primary text-white hover:bg-primary/90 transition-all px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2">
-                <span class="material-symbols-outlined text-lg">visibility</span>
-                Leer ahora
-              </a>
-              <a href="assets/recursos/guia-resico-2026.pdf" download class="text-primary hover:text-secondary font-bold text-xs uppercase tracking-widest flex items-center gap-2 transition-colors">
-                <span class="material-symbols-outlined text-lg">download</span>
-                Descargar
-              </a>
-            </div>
+      <div class="col-span-12">
+        <!-- Swiper Container -->
+        <div class="swiper guias-carousel">
+          <div class="swiper-wrapper">
             
-            <a href="https://wa.me/526647338483?text=Hola%2C%20vi%20su%20p%C3%A1gina%20de%20BajaTax%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20el%20RESCIO%202026" 
-               target="_blank"
-               class="text-secondary font-bold text-sm hover:translate-x-1 transition-transform flex items-center gap-2 mt-2">
-              Solicitar asesoría RESICO
-              <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Guía Deducciones -->
-        <div class="mt-0 md:mt-12 group">
-          <div class="aspect-[4/3] bg-primary rounded-2xl mb-6 overflow-hidden shadow-lg border border-outline-variant/10 relative">
-            <img src="assets/recursos/guia-deducciones-real.png" alt="Guía Deducciones" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <div class="absolute top-4 left-4">
-              <span class="bg-secondary text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg">Nuevo</span>
+            <!-- Slide 1: RESICO -->
+            <div class="swiper-slide">
+              <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-xl border border-outline-variant/10 h-full flex flex-col">
+                <div class="aspect-[4/3] bg-primary rounded-xl mb-6 overflow-hidden relative shadow-inner">
+                  <img src="assets/recursos/guia-resico-2026-real.png" alt="Guía RESICO 2026" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all">
+                  <div class="absolute top-3 left-3">
+                    <span class="bg-secondary text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">Nuevo</span>
+                  </div>
+                </div>
+                <h4 class="text-xl font-bold text-primary mb-2">RESICO 2026: Éxito Fiscal</h4>
+                <p class="text-sm text-on-surface-variant mb-6 flex-grow leading-relaxed">Protege tu lugar en el régimen más amigable del SAT con nuestra guía actualizada.</p>
+                
+                <div class="flex flex-col gap-3 pt-4 border-t border-outline-variant/10">
+                  <div class="flex items-center justify-between">
+                    <a href="assets/recursos/guia-resico-2026.pdf" target="_blank" class="text-primary font-bold text-sm flex items-center gap-1 hover:text-secondary">
+                      <span class="material-symbols-outlined text-lg font-bold">visibility</span>
+                      Leer
+                    </a>
+                    <a href="assets/recursos/guia-resico-2026.pdf" download class="text-on-surface-variant font-bold text-[10px] uppercase tracking-widest flex items-center gap-1 hover:text-primary">
+                      <span class="material-symbols-outlined text-lg">download</span>
+                      PDF
+                    </a>
+                  </div>
+                  <a href="https://wa.me/526647338483?text=Hola%2C%20vi%20su%20p%C3%A1gina%20de%20BajaTax%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20el%20RESCIO%202026" 
+                     target="_blank"
+                     class="bg-secondary/10 text-secondary text-center py-2 rounded-lg font-bold text-xs hover:bg-secondary hover:text-white transition-all">
+                    Solicitar Asesoría
+                  </a>
+                </div>
+              </div>
             </div>
+
+            <!-- Slide 2: Deducciones -->
+            <div class="swiper-slide">
+              <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-xl border border-outline-variant/10 h-full flex flex-col">
+                <div class="aspect-[4/3] bg-primary rounded-xl mb-6 overflow-hidden relative shadow-inner">
+                  <img src="assets/recursos/guia-deducciones-real.png" alt="Guía Deducciones" class="w-full h-full object-cover">
+                  <div class="absolute top-3 left-3">
+                    <span class="bg-secondary text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">Nuevo</span>
+                  </div>
+                </div>
+                <h4 class="text-xl font-bold text-primary mb-2">Fundamentos de Deducción</h4>
+                <p class="text-sm text-on-surface-variant mb-6 flex-grow leading-relaxed">Identifica qué gastos puedes restar al SAT para aumentar tu rentabilidad.</p>
+                
+                <div class="flex flex-col gap-3 pt-4 border-t border-outline-variant/10">
+                  <div class="flex items-center justify-between">
+                    <a href="assets/recursos/guia-deducciones.pdf" target="_blank" class="text-primary font-bold text-sm flex items-center gap-1 hover:text-secondary">
+                      <span class="material-symbols-outlined text-lg font-bold">visibility</span>
+                      Leer
+                    </a>
+                    <a href="assets/recursos/guia-deducciones.pdf" download class="text-on-surface-variant font-bold text-[10px] uppercase tracking-widest flex items-center gap-1 hover:text-primary">
+                      <span class="material-symbols-outlined text-lg">download</span>
+                      PDF
+                    </a>
+                  </div>
+                  <a href="https://wa.me/526647338483?text=Hola%2C%20vi%20su%20p%C3%A1gina%20de%20BajaTax%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20fiscal%20sobre%20deducciones" 
+                     target="_blank"
+                     class="bg-secondary/10 text-secondary text-center py-2 rounded-lg font-bold text-xs hover:bg-secondary hover:text-white transition-all">
+                    Solicitar Asesoría
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Próximamente (Placeholder for visual depth) -->
+            <div class="swiper-slide cursor-not-allowed">
+              <div class="bg-surface-container-low opacity-60 rounded-2xl p-6 border border-outline-variant/10 h-full flex flex-col items-center justify-center text-center">
+                <span class="material-symbols-outlined text-primary/30 text-6xl mb-4">more_horiz</span>
+                <h4 class="text-xl font-bold text-primary/40 mb-2">Nueva Guía Contable</h4>
+                <p class="text-xs text-on-surface-variant/40">Nuestro equipo está preparando más recursos para ti.</p>
+                <span class="mt-6 bg-outline-variant/20 text-on-surface-variant/60 px-4 py-1.5 rounded-full text-[10px] uppercase font-bold tracking-widest">En proceso</span>
+              </div>
+            </div>
+
           </div>
-          <h4 class="text-xl md:text-2xl font-bold text-primary mb-2">Fundamentos de deducción</h4>
-          <p class="text-sm md:text-base text-on-surface-variant mb-6 leading-relaxed">Identifica qué gastos puedes restar al SAT para aumentar la rentabilidad de tu negocio en 2026 de forma segura.</p>
           
-          <div class="flex flex-col gap-3">
-            <div class="flex flex-wrap gap-4 items-center">
-              <a href="assets/recursos/guia-deducciones.pdf" target="_blank" class="bg-primary text-white hover:bg-primary/90 transition-all px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2">
-                <span class="material-symbols-outlined text-lg">visibility</span>
-                Leer ahora
-              </a>
-              <a href="assets/recursos/guia-deducciones.pdf" download class="text-primary hover:text-secondary font-bold text-xs uppercase tracking-widest flex items-center gap-2 transition-colors">
-                <span class="material-symbols-outlined text-lg">download</span>
-                Descargar
-              </a>
-            </div>
-            
-            <a href="https://wa.me/526647338483?text=Hola%2C%20vi%20su%20p%C3%A1gina%20de%20BajaTax%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20fiscal%20sobre%20deducciones" 
-               target="_blank"
-               class="text-secondary font-bold text-sm hover:translate-x-1 transition-transform flex items-center gap-2 mt-2">
-              Solicitar asesoría fiscal
-              <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </a>
-          </div>
+          <!-- Pagination & Navigation -->
+          <div class="swiper-pagination !-bottom-2"></div>
+          <div class="swiper-button-prev !hidden md:!flex"></div>
+          <div class="swiper-button-next !hidden md:!flex"></div>
         </div>
-
       </div>
+
 </div>
 </section>
 
@@ -411,7 +470,33 @@ Leer en línea
 <span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">¿Dudas? Habla con un experto</span>
 </a>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const swiper = new Swiper('.guias-carousel', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 150,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+</script>
 
-
-\n</body>
+</body>
 </html>
