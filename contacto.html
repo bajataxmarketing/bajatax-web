@@ -440,7 +440,7 @@
       }
     })();
 
-    // Enviar a correo usando mailto con datos del formulario
+    // Enviar a WhatsApp con datos del formulario
     document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -454,9 +454,9 @@
       const tipoClienteTexto =
         clientType === "empresa" ? "Empresa" : "Persona Física";
 
-      const subject = `Nuevo contacto web Baja Tax - ${service || "Consulta general"}`;
-      const body =
-`Nombre completo: ${name}
+      const whatsappMessage = `Hola, vi su página de BajaTax y me gustaría agendar una asesoría.
+
+Nombre: ${name}
 Correo: ${email}
 Teléfono: ${phone}
 Tipo de cliente: ${tipoClienteTexto}
@@ -465,8 +465,8 @@ Servicio requerido: ${service}
 Mensaje:
 ${message}`;
 
-      window.location.href =
-        `mailto:info@bajatax.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const whatsappURL = `https://wa.me/526647338483?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappURL, '_blank');
     });
   </script>
 
