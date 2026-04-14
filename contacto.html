@@ -308,43 +308,29 @@
       <div class="max-w-7xl mx-auto">
         <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-outline-variant/10 group">
 
-          <div class="h-[500px] w-full bg-slate-100 relative overflow-hidden">
-            <!-- Google Maps Embed -->
-            <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.171374691298!2d-116.92977700000002!3d32.493987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93857dd83ffff%3A0x2faca6871fff6c5d!2sBaja%20Tax!5e1!3m2!1ses-419!2smx!4v1776188317851!5m2!1ses-419!2smx" 
-               width="100%" 
-               height="100%" 
-               style="border:0;" 
-               allowfullscreen="" 
-               loading="lazy" 
-               referrerpolicy="no-referrer-when-downgrade"
-               class="filter grayscale-[0.2] contrast-[1.1]">
-            </iframe>
-            
-            <!-- Shadow Overlay for the card to stand out -->
-            <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+          <div class="h-[500px] w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+            <!-- Background Office Photo -->
+            <img src="assets/oficina.png" alt="Oficina Baja Tax Plaza Insurgentes" class="w-full h-full object-cover opacity-60 brightness-75">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent"></div>
           </div>
 
-          <!-- Location Info Card with Photo Reference -->
-          <div class="absolute top-6 left-6 md:top-10 md:left-10 bg-white shadow-2xl rounded-2xl max-w-[320px] md:max-w-sm border border-outline-variant/10 z-10 overflow-hidden transition-transform hover:scale-[1.01]">
-            <div class="relative h-40 w-full overflow-hidden">
-              <img src="assets/oficina.png" alt="Entrada Oficina Baja Tax" class="w-full h-full object-cover">
-              <div class="absolute bottom-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider shadow-lg">
-                Referencia: Puerta 4
-              </div>
-            </div>
-            
-            <div class="p-6 md:p-8">
-              <h4 class="font-headline font-extrabold text-primary mb-2 text-lg">¿Cómo encontrarnos?</h4>
-              <p class="text-on-surface-variant text-xs md:text-sm leading-relaxed mb-6 font-body">
-                Estamos en Plaza Insurgentes. Al llegar, busca la <span class="text-secondary font-bold">Puerta 4</span> para recibir asesoría directa.
+          <!-- Location Info Card (Simplified) -->
+          <div class="absolute inset-y-0 left-0 md:left-10 flex items-center z-10 px-6">
+            <div class="bg-white/95 backdrop-blur-xl shadow-2xl p-8 md:p-10 rounded-[2rem] max-w-sm border border-white/20">
+              <span class="bg-secondary/10 text-secondary text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-[0.2em] mb-6 inline-block">Ubicación Real</span>
+              <h4 class="font-headline font-extrabold text-primary mb-4 text-2xl">Puerta 4 - Plaza Insurgentes</h4>
+              <p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-8 font-body">
+                Una vez en la plaza, ubícanos directamente en el <span class="text-primary font-bold">Local N° 4</span>. Estamos listos para recibirte.
               </p>
-              <a class="w-full bg-primary text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 text-xs md:text-sm hover:brightness-110 active:scale-95 transition-all shadow-md group/btn"
-                 href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7"
-                 target="_blank">
-                <span class="material-symbols-outlined text-base group-hover/btn:translate-x-0.5 transition-transform">directions</span>
-                Obtener direcciones
-              </a>
+              <div class="space-y-4">
+                <a class="w-full bg-primary text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3 text-sm md:text-base hover:scale-[1.02] active:scale-95 transition-all shadow-xl group/btn"
+                   href="https://maps.app.goo.gl/pfctEiR9BSL5om3d7"
+                   target="_blank">
+                  <span class="material-symbols-outlined text-xl group-hover/btn:translate-x-0.5 transition-transform">directions</span>
+                  Obtener direcciones GPS
+                </a>
+                <p class="text-center text-[11px] text-on-surface-variant/60 font-medium">Tijuana, B.C. Río Tijuana 3ª Etapa</p>
+              </div>
             </div>
           </div>
         </div>
