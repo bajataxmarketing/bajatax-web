@@ -85,39 +85,58 @@
     </script>
     <style>
         .guias-carousel {
-            padding: 50px 0 !important;
+            padding: 80px 0 !important;
             overflow: visible !important;
         }
         .guias-carousel .swiper-slide {
             width: 320px !important;
             height: auto;
-            transition: transform 0.3s ease;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: blur(2px) brightness(0.7);
+        }
+        .guias-carousel .swiper-slide-active {
+            filter: blur(0) brightness(1);
+            z-index: 10;
         }
         @media (min-width: 768px) {
             .guias-carousel .swiper-slide {
-                width: 400px !important;
+                width: 420px !important;
             }
         }
         .guias-carousel .swiper-slide-shadow-left,
         .guias-carousel .swiper-slide-shadow-right {
             border-radius: 1.5rem;
+            background-image: linear-gradient(to left, rgba(0,29,52,0.5), rgba(0,0,0,0)) !important;
+        }
+        .guias-carousel .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.3) !important;
+            width: 10px;
+            height: 10px;
         }
         .guias-carousel .swiper-pagination-bullet-active {
-            background: #006e27 !important;
+            background: #ffffff !important;
+            width: 25px;
+            border-radius: 5px;
         }
         .guias-carousel .swiper-button-next,
         .guias-carousel .swiper-button-prev {
-            color: #006e27 !important;
-            background: rgba(255, 255, 255, 0.9);
-            width: 50px;
-            height: 50px;
+            color: #ffffff !important;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .guias-carousel .swiper-button-next:hover,
+        .guias-carousel .swiper-button-prev:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
         }
         .guias-carousel .swiper-button-next:after,
         .guias-carousel .swiper-button-prev:after {
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 18px;
         }
     </style>
 <style>
@@ -246,13 +265,16 @@ Leer en línea
 </div>
 </section>
 
-<!-- Section: Guías Prácticas -->
-<section class="py-12 md:py-24 bg-surface px-8">
-<div class="max-w-7xl mx-auto editorial-grid">
+<!-- Section: Guías Prácticas (Premium Dark) -->
+<section class="py-12 md:py-24 bg-[#001D34] px-8 relative overflow-hidden">
+  <!-- Subtle Glow Effect -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,rgba(0,110,39,0.15),transparent_60%)] pointer-events-none"></div>
+
+<div class="max-w-7xl mx-auto editorial-grid relative z-10">
 <div class="col-span-12 md:col-span-4 mb-12">
-<h2 class="font-extrabold font-headline text-primary mb-6">Guías informativas</h2>
-<p class="text-on-surface-variant leading-relaxed">
-                Guías prácticas para entender procesos fiscales y contables de forma clara y aplicable.
+<h2 class="font-extrabold font-headline text-white mb-6">Guías informativas</h2>
+<p class="text-white/70 leading-relaxed font-medium">
+                Recursos exclusivos diseñados para darte claridad fiscal y potenciar la rentabilidad de tu negocio en 2026.
             </p>
 </div>
 
@@ -480,9 +502,9 @@ Leer en línea
             slidesPerView: 'auto',
             loop: true,
             coverflowEffect: {
-                rotate: 20,
+                rotate: 15,
                 stretch: 0,
-                depth: 150,
+                depth: 200,
                 modifier: 1,
                 slideShadows: true,
             },
