@@ -21,7 +21,7 @@ new_url = f"https://wa.me/526647338483?text={encoded_msg}"
 
 protected_phrases = [
     "asesoría sobre impuestos",
-    "asesoría sobre contabilidad para mi empresa",
+    "asesoría sobre contabilidad",
     "asesoría sobre nómina",
     "asesoría fiscal y legal",
     "asesoría sobre facturación"

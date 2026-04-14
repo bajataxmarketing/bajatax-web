@@ -21,7 +21,7 @@ encoded_global = urllib.parse.quote(global_msg)
 specialized = {
     "servicios.html": [
         ("Impuestos", "Hola, visité la página web de BajaTax y me interesa recibir asesoría sobre impuestos"),
-        ("Contabilidad para tu empresa", "Hola, visité la página web de BajaTax y me interesa recibir asesoría sobre contabilidad para mi empresa"),
+        ("Contabilidad", "Hola, visité la página web de BajaTax y me interesa recibir asesoría sobre contabilidad"),
         ("Nómina", "Hola, visité la página web de BajaTax y me interesa recibir asesoría sobre nómina"),
         ("Asesoría fiscal y legal", "Hola, visité la página web de BajaTax y me interesa recibir asesoría fiscal y legal"),
         ("Facturación", "Hola, visité la página web de BajaTax y me interesa recibir asesoría sobre facturación")
