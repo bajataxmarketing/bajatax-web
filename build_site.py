@@ -64,8 +64,13 @@ new_nav_block = """<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur
 pages = ['index', 'nosotros', 'servicios', 'contacto', 'recursos', 'persona-fisica', 'empresas', 'privacidad', 'terminos']
 
 for f in html_files:
-    with open(f, 'r', encoding='utf-8') as file:
-        content = file.read()
+    print(f"Processing {f}...")
+    try:
+        with open(f, 'r', encoding='utf-8') as file:
+            content = file.read()
+    except UnicodeDecodeError:
+        with open(f, 'r', encoding='latin-1') as file:
+            content = file.read()
     
     # Clean URLs
     for page in pages:
