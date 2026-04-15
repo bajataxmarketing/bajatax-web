@@ -271,12 +271,34 @@ Leer en línea
         </p>
       </div>
       <div class="md:w-1/2 w-full">
-        <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Próximamente activaremos las suscripciones automáticas.');">
-          <input type="email" placeholder="Tu correo electrónico" required 
-                 class="flex-grow bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-6 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all">
-          <button type="submit" class="bg-secondary hover:bg-[#00531b] text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-secondary/20">
-            Suscribirme
-          </button>
+        <form action="https://bajatax.us11.list-manage.com/subscribe/post?u=91f64640822ad94522121a2ff&amp;id=29dd34f8f4&amp;f_id=0052a3e0f0" 
+              method="post" 
+              id="mc-embedded-subscribe-form" 
+              name="mc-embedded-subscribe-form" 
+              target="_blank"
+              class="space-y-4">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input type="text" name="FNAME" placeholder="Tu nombre" required 
+                   class="bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-6 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all text-sm">
+            <input type="text" name="LNAME" placeholder="Tu apellido" required 
+                   class="bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-6 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all text-sm">
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input type="email" name="EMAIL" placeholder="Tu correo electrónico" required 
+                   class="flex-grow bg-white/10 border border-white/20 text-white placeholder:text-white/40 px-6 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all text-sm">
+            
+            <!-- Real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+              <input type="text" name="b_91f64640822ad94522121a2ff_29dd34f8f4" tabindex="-1" value="">
+            </div>
+
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" 
+                    class="bg-secondary hover:bg-[#00531b] text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-secondary/20 whitespace-nowrap">
+              Suscribirme
+            </button>
+          </div>
         </form>
         <p class="text-white/40 text-[10px] mt-4 text-center md:text-left">
           Al suscribirte, aceptas recibir correos de carácter informativo. Puedes darte de baja en cualquier momento.
